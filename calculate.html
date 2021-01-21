@@ -1,0 +1,41 @@
+<html>
+   <head>
+   <script type="text/javascript" src="Script/calculate.js"></script>
+   </head>
+   <body>
+      <form name="calculator">
+         <table>
+            
+            <tr>
+			  <b><label for="bags">Bag Type:</label></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			  <select name="bags" id="bags">
+				<option value="groceryjute">Grocery Jute</option>
+				<option value="grocerymix">Grocery Mix</option>
+				<option value="winesingle">Wine Single</option>
+				<option value="winedouble">Wine Double</option>
+				<option value="ladies">Ladies Side</option>
+			  </select>
+			</tr>
+			<br><br>
+			<tr>
+              <td>
+                 <b>Volume:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b><input type="text" name="volume" id="volume">
+              </td>
+			</tr>
+			
+
+            <tr>
+              <td>
+				  <b>Net Cost:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" name="bdprice" id="bdprice" ><br><br>	
+                  <b>Price/Bag:&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" name="price" id="price" ><br><br>
+				  <b>Price/Bag & VAT:&nbsp;&nbsp;&nbsp;&nbsp;</b><input type="text" name="perbag" id="perbag" >    
+              </td>
+			</tr>
+
+           <tr>
+              <td style="text-align:right;"><input type="button" name="clickbtn" value="Display Price" onclick="calculate()"></td>
+           </tr>
+        </table>
+      </form>
+   </body>
+</html>
